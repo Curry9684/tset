@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹 - 成大附工電子科</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .profile-pic {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            border-radius: 50%;
+        }
+        .info, .interests, .contact {
+            margin-bottom: 20px;
+        }
+        .info h2, .interests h2, .contact h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>成大附工電子科 - 學生自我介紹</h1>
+    </header>
+    <nav>
+        <a href="#info">個人信息</a>
+        <a href="#interests">興趣愛好</a>
+        <a href="#contact">聯絡方式</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <section id="info" class="info">
+                <h2>個人信息</h2>
+                <img src="https://example.com/profile.jpg" alt="學生照片" class="profile-pic">
+                <p>你好，我是張三，現就讀於成大附工電子科。我對電子工程充滿熱情，喜歡動手實作，並且熱衷於學習新技術。</p>
+            </section>
+            <section id="interests" class="interests">
+                <h2>興趣愛好</h2>
+                <p>在課餘時間，我喜歡參加電子相關的競賽，並且經常閱讀電子工程的相關書籍與文章。此外，我也是一名熱愛運動的人，尤其喜歡籃球和跑步。</p>
+            </section>
+            <section id="contact" class="contact">
+                <h2>聯絡方式</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">姓名:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">電子郵件:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">留言:</label><br>
+                    <textarea id="message" name="message" required></textarea><br>
+                    <input type="submit" value="提交">
+                </form>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 張三. 版權所有.</p>
+    </footer>
+</body>
+</html>
